@@ -3,7 +3,10 @@ module Ripl
     VERSION = '0.1.0'
     COLORS = {:red=>31, :green=>32, :yellow=>33, :blue=>34, :purple=>35, :cyan=>36}
 
-    Ripl.config[:color_error] ||= :red
+    def before_loop
+      Ripl.config[:color_error] ||= :red
+      super
+    end
 
     def format_error(error)
       color_code = config[:color_error].to_s[/^[\d;]+$/] || !config[:color_error] ?
