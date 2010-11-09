@@ -34,5 +34,5 @@ While in the console you can change colors as desired:
     >> Ripl::ColorError::COLORS
 
 To explore ansi escape codes, see {here}[http://en.wikipedia.org/wiki/ANSI_escape_code]. With
-with the correct code you can bold, underline, add a background color ...
+the correct code you can bold, underline, add a background color ...
 
