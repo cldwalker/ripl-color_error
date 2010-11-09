@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = "gabriel.horner@gmail.com"
   s.homepage    = "http://github.com/cldwalker/ripl-color_error"
   s.summary = "A ripl plugin to color errors"
-  s.description =  "A ripl plugin to color errors and maybe even give them some bold, underline and background color."
+  s.description =  "This ripl plugin allows you to color errors in the console."
   s.required_rubygems_version = ">= 1.3.6"
   s.rubyforge_project = 'tagaholic'
   s.add_dependency 'ripl', '>= 0.2.0'
