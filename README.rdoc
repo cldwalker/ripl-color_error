@@ -1,0 +1,38 @@
+== Description
+This ripl plugin allows you to color errors in the console.
+
+== Install
+Install the gem with:
+
+    sudo gem install ripl-color_error
+
+== Usage
+
+Add to your ~/.riplrc
+
+    require 'ripl/color_error'
+
+By default this plugin uses red. But say you want to configure it to blue:
+
+    # after the above require
+    Ripl.config[:color_error] = :blue
+
+While in the console you can change colors as desired:
+
+    $ ripl
+    >> Ripl.config[:color_error] = :blue
+    => :blue
+
+    # To turn off coloring
+    >> Ripl.config[:color_error] = false
+
+    # If you know your ansi escape codes
+    >> Ripl.config[:color_error] = '34;1'
+    => '34;1'
+
+    # See available predefined colors
+    >> Ripl::ColorError::COLORS
+
+To explore ansi escape codes, see {here}[http://en.wikipedia.org/wiki/ANSI_escape_code]. With
+with the correct code you can bold, underline, add a background color ...
+
