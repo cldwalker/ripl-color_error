@@ -1,2 +1,5 @@
+== 0.1.1
+* Configure plugin less invasively
+
 == 0.1.0
 * Initial release. Sooo redundant

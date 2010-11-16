@@ -2,7 +2,7 @@ require 'ripl'
 
 module Ripl
   module ColorError
-    VERSION = '0.1.0'
+    VERSION = '0.1.1'
     COLORS = {:red=>31, :green=>32, :yellow=>33, :blue=>34, :purple=>35, :cyan=>36}
 
     def format_error(error)
